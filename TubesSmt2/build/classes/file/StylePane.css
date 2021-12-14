@@ -1,0 +1,14 @@
+.loginPane {
+    -fx-background-image: url(bg_login.png);
+    -fx-background-size: cover;
+    -fx-background-color: #ffffff00;
+}
+.dashboardLeft {
+    -fx-background-color: #2f3640;
+}
+.loginVBoxBg {
+    -fx-background-color: #2f3640;
+}
+.backgroundVBox {
+    -fx-background-color: #f5f6fa;
+}
