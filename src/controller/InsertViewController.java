@@ -104,7 +104,7 @@ public class InsertViewController implements Initializable {
             stat = conn.prepareStatement(sqlU);
             stat.execute();
             successInput();
-//asd
+//asdaa
         } else {
             String sqlI = "INSERT INTO barang(nama_barang, unit_barang, jenis_barang) VALUES ('"
                     + barang.getNama() + "','"
