@@ -91,22 +91,24 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <Label text="Jumlah Unit" GridPane.rowIndex="1" />
-                              <Label layoutX="10.0" layoutY="20.0" text="Jenis Unit" GridPane.rowIndex="2" />
-                              <Label layoutX="10.0" layoutY="205.0" text="Nama Unit" />
-                              <TextField fx:id="txt_nama" GridPane.columnIndex="1" GridPane.columnSpan="2" />
-                              <TextField fx:id="txt_unit" layoutX="131.0" layoutY="16.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-                              <ComboBox fx:id="txt_jenis" maxWidth="1.7976931348623157E308" promptText="Jenis" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
-                              <Button fx:id="btn_update" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn_UpdateData" style="-fx-background-color: #52A7CC;" text="Update" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              <Label text="Jumlah Unit" GridPane.rowIndex="2" />
+                              <Label layoutX="10.0" layoutY="20.0" text="Jenis Unit" GridPane.rowIndex="3" />
+                              <Label layoutX="10.0" layoutY="205.0" text="Nama Unit" GridPane.rowIndex="1" />
+                              <TextField fx:id="txt_nama" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                              <TextField fx:id="txt_unit" layoutX="131.0" layoutY="16.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                              <ComboBox fx:id="txt_jenis" maxWidth="1.7976931348623157E308" promptText="Jenis" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                              <Button fx:id="btn_update" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn_UpdateData" style="-fx-background-color: #52A7CC;" text="Update" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="btn_delete" layoutX="210.0" layoutY="134.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn_DeleteData" style="-fx-background-color: #52A7CC;" text="Delete" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btn_delete" layoutX="210.0" layoutY="134.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn_DeleteData" style="-fx-background-color: #52A7CC;" text="Delete" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Button>
+                              <TextField fx:id="txt_namaID" editable="false" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+                              <Label text="Nama Barang" />
                            </children>
                         </GridPane>
                      </children>

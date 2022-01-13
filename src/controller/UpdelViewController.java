@@ -66,6 +66,9 @@ public class UpdelViewController implements Initializable {
     private TextField txt_nama;
 
     @FXML
+    private TextField txt_namaID;
+
+    @FXML
     private TextField txt_unit;
 
     @FXML
@@ -137,6 +140,7 @@ public class UpdelViewController implements Initializable {
             } else {
 
                 txt_nama.setText(brgg.getNama());
+                txt_namaID.setText(brgg.getNama());
                 txt_unit.setText(String.valueOf(brgg.getUnit()));
                 txt_jenis.setPromptText(brgg.getJenis());
                 txt_jenis.setValue(brgg.getJenis());
@@ -154,7 +158,7 @@ public class UpdelViewController implements Initializable {
             clearInput();
         } else {
             int unt = Integer.parseInt(txt_unit.getText());
-            barang.setNama(txt_nama.getText());
+            barang.setNama(txt_namaID.getText());
             barang.setUnit(unt);
             barang.setJenis(txt_jenis.getSelectionModel().getSelectedItem());
 
@@ -181,9 +185,9 @@ public class UpdelViewController implements Initializable {
         } else {
 
             unitB += barang.getUnit();
-            String sqlU = "UPDATE barang SET nama_barang = '" + barang.getNama()
+            String sqlU = "UPDATE barang SET nama_barang = '" + txt_nama.getText()
                     + "', unit_barang = '" + unitB
-                    + "', jenis_barang = '" + barang.getJenis()
+                    + "', jenis_barang = '" + txt_jenis.getSelectionModel().getSelectedItem()
                     + "' WHERE id = '" + idB + "'";
             stat = conn.prepareStatement(sqlU);
             stat.execute();
@@ -255,6 +259,7 @@ public class UpdelViewController implements Initializable {
 
     private void clearInput() {
         txt_nama.setText("");
+        txt_namaID.setText("");
         txt_unit.setText("");
         txt_jenis.setPromptText("Jenis");
         txt_jenis.setValue("");
