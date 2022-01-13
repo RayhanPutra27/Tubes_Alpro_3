@@ -186,7 +186,7 @@ public class UpdelViewController implements Initializable {
 
             unitB += barang.getUnit();
             String sqlU = "UPDATE barang SET nama_barang = '" + txt_nama.getText()
-                    + "', unit_barang = '" + unitB
+                    + "', unit_barang = '" + txt_unit.getText()
                     + "', jenis_barang = '" + txt_jenis.getSelectionModel().getSelectedItem()
                     + "' WHERE id = '" + idB + "'";
             stat = conn.prepareStatement(sqlU);
